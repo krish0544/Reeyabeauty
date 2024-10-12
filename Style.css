@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Start Navbar  */
+
+.nav-main{
+    background-color: #1a1432;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav1,
+#nav2{
+    color: gray;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+#nav2 a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: orange;
+    color: black;
+}
+.nav-list ul{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list{
+    margin-top: 18px;
+}
+
+.nav-list ul a{
+    text-decoration: none;
+    color: grey;
+}
+
+.nav-list ul a:hover{
+    color: white;
+}
+
+#nav2 div:hover{
+    color: white;
+}
+.silde{
+    display: none;
+}
+
+@media screen and (max-width:850px) {
+    .nav-main{
+       width: 100%;
+    }
+
+
+    .silde{
+        display: block;
+    }
+
+    .nav-list,
+    #nav2
+    {
+        display: none;
+    }
+
+    .silde-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .silde-content ul li a,
+    .silde-content p{
+        text-decoration: none;
+        color: grey;
+    }
+
+    .offcanvas-body{
+        background-color: #1a1432;
+    }
+
+    .featurette-divider{
+        color: gray;
+    }
+
+}
+
+/* End Navbar */
+
+/* Start Hero Section */
+
+.hero-section{
+    height: 800px;
+    width: 100%;
+    border: 2px solid black;
+    background-image: url(Brush.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: center;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-details{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    padding: 0% 25%;
+    font-size: 70px;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+.hero-details:nth-of-type(1),
+.hero-details h6{
+    color: white;
+}
+
+.hero-details a{
+    font-size: 20px;
+    padding: 18px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:850px) {
+    .hero-section{
+        height: 100%;
+        background-image: url(Brush.png);
+        background-size: cover;
+        background-position-x: center;
+    }
+    
+    .hero-details
+    {
+        height: 800px;
+        font-size: 35px;
+        padding: 0% 15%;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .hero-details a{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    
+    .hero-details
+    {
+        height: 800px;
+        font-size: 35px;
+        width: 100%;
+        gap: 20px;
+    }
+}
+/* End Hero Section */
