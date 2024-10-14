@@ -1,0 +1,377 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Start Navbar  */
+
+.nav-main {
+    height: 50px;
+    background-color: #151125;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#nav1,
+#nav2 {
+    color: gray;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+#nav2 a {
+    text-decoration: none;
+    padding: 7px 10px;
+    background-color: orange;
+    color: black;
+}
+
+.nav-list ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-list {
+    margin-top: 18px;
+}
+
+.nav-list ul a {
+    text-decoration: none;
+    color: grey;
+}
+
+.nav-list ul a:hover {
+    color: white;
+}
+
+#nav2 div:hover {
+    color: white;
+}
+
+.silde {
+    display: none;
+}
+
+@media screen and (max-width:850px) {
+    .nav-main {
+        height: 60px;
+        width: 100%;
+    }
+
+    #logo-main {
+        width: 150px;
+    }
+
+    .silde {
+        display: block;
+    }
+
+    .nav-list,
+    #nav2 {
+        display: none;
+    }
+
+    .silde-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .silde-content div ul li {
+        font-size: larger;
+    }
+
+    .silde-content ul li a,
+    .silde-content p {
+        text-decoration: none;
+        color: grey;
+    }
+
+    #silde-contact {
+        padding: 10px;
+        text-align: center;
+        background-color: orange;
+    }
+
+    #silde-contact a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .offcanvas-body {
+        background-color: #1a1432;
+    }
+
+    .featurette-divider {
+        color: gray;
+    }
+
+}
+
+/* End Navbar */
+
+/* Start Hero Section */
+
+.hero-section {
+    height: 800px;
+    width: 100%;
+    border: 2px solid black;
+    background-image: url(Brush.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: center;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-details {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    padding: 0% 25%;
+    font-size: 70px;
+    background-color: rgba(0, 0, 0, 0.267);
+}
+
+.hero-details:nth-of-type(1),
+.hero-details h6 {
+    color: white;
+}
+
+.hero-details a {
+    font-size: 20px;
+    padding: 18px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width:850px) {
+    .hero-section {
+        height: 100%;
+        background-image: url(Brush.png);
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    .hero-details {
+        height: 800px;
+        font-size: 35px;
+        padding: 0% 15%;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .hero-details a {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .hero-details {
+        height: 800px;
+        font-size: 35px;
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+/* End Hero Section */
+
+/* Start - Makeup Details */
+
+.Makeup-details {
+    height: 180vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: grid;
+    grid-template-rows: auto auto;
+    /* margin-top: 30px; */
+    padding-top: 50px;
+}
+
+.Makeup-details #makeover,
+.Makeup-details #looks {
+    height: 70%;
+    width: 100%;
+    /* border: 3px solid rgb(255, 0, 0); */
+}
+
+#makeover,
+#looks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#makeover-text,
+#looks-text {
+    align-content: center;
+    padding: 0px 50px;
+}
+
+#makeup-btn{
+    padding: 10px;
+    background-color: #151125;
+    color: white;
+    text-decoration: none;
+}
+
+#looks-text h2,
+#makeover-text h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+#looks-text p,
+#makeover-text p{
+    font-size: 15px;
+}
+
+
+#makeover-text,
+#makeover-img,
+#looks-text,
+#looks-img {
+    height: 80%;
+    width: 40%;
+    /* border: 2px solid black; */
+}
+
+.img {
+    height: 100%;
+    width: 85%;
+    display: flex;
+    place-items: center;
+    margin-block: 20px;
+}
+.one{
+    margin-bottom:50px;
+}
+.two{
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.image-container img {
+    height: 100%;
+    width: 90%;
+    border-radius: 20px;
+}
+
+#looks-img{
+    order: -1;
+}
+
+@media screen and (max-width:750px) {
+
+    .Makeup-details #makeover,
+    .Makeup-details #looks {
+        height: 100%;
+
+    }
+    .image-container img {
+        width: 100%;
+    }
+    
+    .img {
+        height: 80%;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    #makeover,
+    #looks {
+        flex-direction: column;
+    }
+
+    #makeover-text,
+    #makeover-img,
+    #looks-text,
+    #looks-img {
+        width: 100%;
+    }
+
+
+    .Makeup-details{
+        height: 100%;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+
+    .Makeup-details #makeover,
+    .Makeup-details #looks {
+        height: 100%;
+    }
+    .image-container img {
+        width: 100%;
+    }
+    
+    .img {
+        height: 100%;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    #makeover,
+    #looks {
+        flex-direction: column;
+    }
+
+    #makeover-text,
+    #makeover-img,
+    #looks-text,
+    #looks-img {
+        width: 100%;
+    }
+
+    
+    .Makeup-details{
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+    .Makeup-details #makeover,
+    .Makeup-details #looks {
+        height: 100%;
+    }
+    .image-container img {
+        width: 100%;
+    }
+
+    .img {
+        height: 100%;
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    #makeover,
+    #looks {
+        flex-direction: column;
+    }
+
+    #makeover-text,
+    #makeover-img,
+    #looks-text,
+    #looks-img {
+        width: 100%;
+    }
+
+
+    .Makeup-details{
+        height: 100%;
+    }
+}
+/* End - Makeup Details */
