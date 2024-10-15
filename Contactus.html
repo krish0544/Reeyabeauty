@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Contact Form @sauravxcode</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <h1>ReeyaBeauty</h1>
+        <p>Fill up the form to get in touch with us. </p>
+
+        <!-- Contact form section -->
+        <div class="contact-box">
+            <!-- Left side of the form -->
+            <div class="container-left">
+                <h3>Fill the Form*</h3>
+                <!-- Form -->
+                <form id="contactForm" onsubmit="return validateForm()" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="9a295924-0fb1-4318-a507-027075604fec">
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name*</label>
+                            <input type="text" id="name" placeholder="Enter your Name" required name="Name">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Phone*</label>
+                            <input type="text" id="phone" placeholder="+91 1234567890" required name="Phone">
+                        </div>
+                    </div>
+                    
+                    <!-- Input row for Email and Subject -->
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email*</label>
+                            <input type="email" id="email" placeholder="youremail@gmail.com" required name="Email">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" id="subject" placeholder="Inquiry" name="Subject">
+                        </div>                       
+                    </div>
+
+                    <!-- Label for Message textarea -->
+                    <label>Message*</label>
+                    <textarea rows="10" id="message" name="Message" placeholder="Enter your Message"></textarea>
+                    <button type="submit">SEND MESSAGE</button>
+                </form>
+            </div>
+            <!-- Right side with contact information -->
+            <div class="container-right">
+                <h3>Reach Us</h3>
+                <!-- Table for contact information -->
+                <table>
+                    <tr>
+                        <td>Email: </td>
+                        <td>reeyabeauty@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone: </td>
+                        <td>+91 9638565525</td>
+                    </tr>
+
+                    <tr>
+                        <td>Address: </td>
+                        <td>37, Kasi Vishwanath Society,<br>
+                            Near Ranip Post Office<br>
+                            Ranip, Ahmedabad , Gujarat - 382480</td>
+                    </tr>
+                </table>
+                
+                <!-- Map section -->
+                <div class="map">
+                    <!-- Google Map iframe -->
+                    <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.2888210618585!2d77.09131724016883!3d28.621104670527558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d04afb8dbcfe1%3A0xaff19e718be2136b!2sMaharaja%20Surajmal%20Institute%20Of%20Technology!5e0!3m2!1sen!2sin!4v1711214006526!5m2!1sen!2sin" width="800" height="275" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3063.6170846493633!2d72.57187619925341!3d23.07493205315218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e839cc9c7f193%3A0xb7e30a9639568638!2sRanip%20Post%20Office!5e1!3m2!1sen!2sin!4v1728995582039!5m2!1sen!2sin" width="800" height="275" style="border:0;" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript file -->
+    <script src="contacts.js"></script>
+</body>
+</html>
